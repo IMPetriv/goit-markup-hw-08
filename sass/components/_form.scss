@@ -1,0 +1,40 @@
+.online-input {
+	width: 358px;
+	height: 50px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	background-color: transparent;
+	padding-left: 16px;
+	color: #ffffff;
+	&::placeholder {
+		width: 358px;
+		height: 50px;
+	}
+	&:hover,
+&:focus {
+	border-color: var(--accent-color);
+}
+&:hover::placeholder,
+&:focus::placeholder {
+	color: #ffffff;
+}
+}
+
+.footer__form {
+	margin-left: auto;
+}
+
+.form__online {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form__title {
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	margin-bottom: 20px;
+}
+
