@@ -1,11 +1,23 @@
 .clients {
-	@include align-list;
-	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
 }
+
 .clients__item {
-	margin-right: 30px;
-	&:last-child {
-		margin-right: 0px;
+	width: 100%;
+
+	@media screen and (min-width: 768px) {
+		width: calc((100% - 60px) / 2);
+	}
+	
+	margin-bottom: 30px;
+
+	@media screen and (min-width: 1200px) {
+		width: calc((100% - 180px) / 6);
+		margin-right: 30px;
+		&:last-child {
+			margin-right: 0px;
+		}
 	}
 }
 .clients__icon {
@@ -20,8 +32,10 @@
 }
 
 .clients__link {
+	margin-left: auto;
+	margin-right: auto;
 	border: 1px solid rgba(175, 177, 184, 1);
-	width: 170px;
+	width: 210px;
 	height: 92px;
 	@include align-list;
 	justify-content: center;
@@ -32,5 +46,14 @@
 	&:hover,
 	&:focus {
 		border-color: #2196f3;
+	}
+	@media screen and (min-width: 768px) {
+		width: 226px;
+		height: 92px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 170px;
+		height: 92px;
 	}
 }
