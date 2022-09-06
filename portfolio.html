@@ -16,13 +16,14 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
 		<link rel="stylesheet" href="./css/styles.css" />
-		<link rel="stylesheet" href="./css/main.min.css">
+		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
 		<header class="header">
 			<div class="container header__container">
 				<a href="./index.html" class="logo link">
-					<span class="logo">Web</span><span class="logo__part logo">Studio</span>
+					<span class="logo">Web</span>
+					<span class="logo__part logo">Studio</span>
 				</a>
 				<button type="button" class="menu-open">
 					<svg class="menu__icon" width="40" height="40">
@@ -35,7 +36,9 @@
 						<li class="navigation__item">
 							<a href="./index.html" class="navigation__link link">Студія</a>
 						</li>
-						<li class="navigation__item"><a href="./portfolio.html" class="navigation__link navigation__link--current link">Портфоліо</a></li>
+						<li class="navigation__item">
+							<a href="./portfolio.html" class="navigation__link navigation__link--current link">Портфоліо</a>
+						</li>
 						<li class="navigation__item"><a href="/" class="navigation__link link">Контакти</a></li>
 					</ul>
 				</nav>
@@ -60,36 +63,44 @@
 			</div>
 
 			<div class="mob-menu is-hidden">
-				<div class="container">
+				<button type="button" class="menu-close">
+					<svg class="mob-close-icon" width="18.67" height="18.67">
+						<use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
+					</svg>
+				</button>
+				
+				<div class="container menu__container">
+					<div class="mob-menu-navigation">
+						<nav class="mob-menu-nav">
+							<ul class="mobile-menu list">
+								<li class="mob-menu-item link"><a href="./index.html" class="mob__link link">Студія</a></li>
+								<li class="mob-menu-item link">
+									<a href="./portfolio.html" class="mob__link mob__menu--current link">Портфоліо</a>
+								</li>
+								<li class="mob-menu-item link"><a href="/" class="mob__link link">Контакти</a></li>
+							</ul>
+						</nav>
+					</div>
 
-					<button type="button" class="menu-close">
-						<svg class="mob-close-icon" width="18.67" height="18.67">
-							<use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
-						</svg>
-					</button>
-					<nav class="mob-menu-nav">
-						<ul class="mobile-menu list">
-							<li class="mob-menu-item link"><a href="./index.html" class="mob__link link">Студія</a></li>
-							<li class="mob-menu-item link"><a href="./portfolio.html" class="mob__link link">Портфоліо</a></li>
-							<li class="mob-menu-item link"><a href="/" class="mob__link link">Контакти</a></li>
+					<div class="mobile__box">
+						<ul class="list mob-menu-connect">
+							<li class="mob-connect-tel">
+								<a href="tel:+380991111111" class="mob-tel link">+38 099 111 11 11</a>
+							</li>
+							<li class="mob-connect-mail">
+								<a href="mailto:info@example.com" class="mob__mail link">info@devstudio.com</a>
+							</li>
 						</ul>
-					</nav>
-					<ul class="list mob-menu-connect">
-						<li class="mob-connect-tel">
-							<a href="tel:+380991111111" class="mob-tel link">+38 099 111 11 11</a>
-						</li>
-						<li class="mob-connect-mail">
-							<a href="mailto:info@example.com" class="mob__mail link">info@devstudio.com</a>
-						</li>
-					</ul>
-					<ul class="mobile-soc list">
-						<li class="mobile-soc-item">
-							<a class="mob-soc-connect" href="">Instagram</a>
-						</li>
-						<li class="mobile-soc-item"><a class="mob-soc-connect" href="">Twitter</a></li>
-						<li class="mobile-soc-item"><a class="mob-soc-connect" href="">Facebook</a></li>
-						<li class="mobile-soc-item"><a class="mob-soc-connect" href="">LinkedIn</a></li>
-					</ul>
+
+						<ul class="mobile-soc list">
+							<li class="mobile-soc-item">
+								<a class="mob-soc-connect" href="">Instagram</a>
+							</li>
+							<li class="mobile-soc-item"><a class="mob-soc-connect" href="">Twitter</a></li>
+							<li class="mobile-soc-item"><a class="mob-soc-connect" href="">Facebook</a></li>
+							<li class="mobile-soc-item"><a class="mob-soc-connect" href="">LinkedIn</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -115,7 +126,7 @@
 										<source srcset="./images/img1-mob.jpg 1x, ./images/img1-mob-2x.jpg 2x" media="(max-width: 767px)" />
 										<img srcset="./images/img1.jpg" src="images/img1.jpg" alt="пример1" />
 									</picture>
-									
+
 									<p class="portfolio__text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -129,7 +140,6 @@
 						</li>
 						<li class="portfolio__card">
 							<a href="" class="link portfolio__link">
-								
 								<div class="portfolio__thumb">
 									<picture>
 										<source srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x" media="(min-width: 1200px)" />
@@ -137,7 +147,7 @@
 										<source srcset="./images/img2-mob.jpg 1x, ./images/img2-mob-2x.jpg 2x" media="(max-width: 767px)" />
 										<img srcset="./images/img2.jpg" src="images/img2.jpg" alt="пример2" />
 									</picture>
-									
+
 									<p class="portfolio__text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -297,7 +307,8 @@
 			<div class="container footer__container">
 				<div class="footer__list">
 					<a href="./index.html" class="footer__logo footer__logo-box link">
-						<span class="footer-logo">Web</span><span class="footer__logo-part footer-logo">Studio</span>
+						<span class="footer-logo">Web</span>
+						<span class="footer__logo-part footer-logo">Studio</span>
 					</a>
 					<address class="footer__adress">
 						<ul class="list">

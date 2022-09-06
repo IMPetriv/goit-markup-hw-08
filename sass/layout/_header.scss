@@ -5,8 +5,11 @@
 
 .header__container {
 	@include align-list;
-	padding-top: 24px;
+	@media screen and (min-width: 1200px) {
+		padding-top: 24px;
 	padding-bottom: 25px;
+	}
+	
 }
 
 .logo {

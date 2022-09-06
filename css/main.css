@@ -49,8 +49,12 @@ h6 {
 .header__container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .logo {
@@ -432,7 +436,7 @@ img {
 }
 
 .online-input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   margin-bottom: 20px;
 }
@@ -729,7 +733,7 @@ img {
 }
 
 .clients__item {
-  width: 450px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .clients__item {
@@ -784,15 +788,22 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .buttons__list {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }
 
-.buttons__item {
-  margin-right: 8px;
-}
-.buttons__item:last-child {
-  margin-right: 0px;
+@media screen and (min-width: 1200px) {
+  .buttons__item {
+    margin-right: 8px;
+  }
+  .buttons__item:last-child {
+    margin-right: 0px;
+  }
 }
 
 .portfolio__list {
@@ -831,10 +842,6 @@ img {
   overflow: hidden;
 }
 
-.portfolio__card {
-  width: 450px;
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .portfolio__card {
     width: calc((100% - 60px) / 2);
@@ -847,6 +854,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .portfolio__card {
+    width: 450px;
+    margin-bottom: 30px;
     width: calc((100% - 90px) / 3);
     margin-bottom: 30px;
     width: 370px;
@@ -961,6 +970,10 @@ img {
 
 .advantage__item {
   width: 100%;
+  margin-bottom: 30px;
+}
+.advantage__item:last-child {
+  margin-bottom: 0px;
 }
 @media screen and (min-width: 768px) {
   .advantage__item {
@@ -1046,9 +1059,9 @@ img {
 .mob-menu {
   z-index: 1;
   position: absolute;
-  display: fixed;
-  width: 100vw;
-  height: 100vh;
+  position: fixed;
+  width: 100%;
+  height: 100%;
   background-color: #ffffff;
   top: 0;
   padding-top: 48px;
@@ -1085,7 +1098,7 @@ img {
   margin-bottom: 32px;
 }
 .mob-menu-item:last-child {
-  margin-bottom: 302px;
+  margin-bottom: 0px;
 }
 
 .mob__link {
@@ -1145,6 +1158,31 @@ img {
 
 .mob-connect-mail {
   margin-bottom: 64px;
+}
+
+.mob__menu--current {
+  color: var(--accent-color);
+  position: relative;
+}
+.mob__menu--current::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background-color: var(--accent-color);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  left: 0;
+}
+.mob__menu--current::after {
+  content: "";
+  background-color: var(--accent-color);
+}
+
+.menu__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .btn {
@@ -1322,7 +1360,12 @@ img {
 }
 
 .section {
-  padding: 94px 0px;
+  padding: 60px 0px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0px;
+  }
 }
 
 .section__no-padding-top {
