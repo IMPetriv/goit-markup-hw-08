@@ -14,20 +14,10 @@
 	}
 
 	@media screen and (min-width: 768px) {
-		width: calc((100% - 60px) / 2);
-
-		&:last-child {
-			margin-right: 0px;
-		}
+		width: calc((100% - 30px) / 2);
 	}
-
 	@media screen and (min-width: 1200px) {
 		width: calc((100% - 90px) / 4);
-		margin-right: 30px;
-		&:last-child {
-			margin-bottom: 30px;
-			margin-right: 0px;
-		}
 	}
 
 	background-color: #fff;
