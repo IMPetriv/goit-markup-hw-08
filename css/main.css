@@ -49,6 +49,8 @@ h6 {
 .header__container {
   display: flex;
   align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .header__container {
@@ -326,7 +328,7 @@ img {
   text-align: center;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
     align-items: baseline;
     justify-content: space-around;
@@ -336,8 +338,9 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    text-align: left;
     display: flex;
+    flex-direction: row;
+    text-align: left;
     align-items: baseline;
   }
 }
@@ -451,9 +454,6 @@ img {
   justify-content: center;
 }
 
-.form__online {
-  width: 100%;
-}
 @media screen and (max-width: 767px) {
   .form__online {
     display: flex;
@@ -468,7 +468,6 @@ img {
 }
 
 .online-input {
-  width: 100%;
   height: 50px;
   margin-bottom: 20px;
 }
@@ -485,8 +484,10 @@ img {
   }
 }
 
-.footer__form {
-  width: 100%;
+@media screen and (max-width: 768px) and (max-width: 1199px) {
+  .footer__form {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__form {
@@ -768,11 +769,13 @@ img {
 
 .clients__item {
   width: 100%;
-  width: calc((100% - 60px) / 2);
+  height: 92px;
+  width: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .clients__item {
     width: calc((100% - 60px) / 3);
+    height: 92px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -878,7 +881,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .portfolio__card {
-    margin-bottom: 30px;
     width: calc((100% - 60px) / 3);
   }
 }
@@ -988,7 +990,6 @@ img {
 
 .advantage__item {
   width: 100%;
-  margin-bottom: 30px;
 }
 .advantage__item:last-child {
   margin-bottom: 0px;

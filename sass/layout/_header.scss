@@ -5,6 +5,8 @@
 
 .header__container {
 	@include align-list;
+	padding-top: 16px;
+	padding-bottom: 16px;
 	@media screen and (min-width: 768px) {
 		padding-top: 18px;
 	padding-bottom: 20px;

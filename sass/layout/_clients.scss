@@ -1,5 +1,4 @@
 .clients {
-	
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
@@ -7,15 +6,16 @@
 
 .clients__item {
 	width: 100%;
-	
-	width: calc((100% - 60px)/2);
-	
+	height: 92px;
+	width: calc((100% - 30px) / 2);
+
 	@media screen and (min-width: 768px) {
-		width: calc((100% - 60px)/3);
+		width: calc((100% - 60px) / 3);
+		height: 92px;
 	}
 
 	@media screen and (min-width: 1200px) {
-		width: calc((100% - 150px)/6);
+		width: calc((100% - 150px) / 6);
 	}
 }
 
@@ -44,5 +44,4 @@
 	&:focus {
 		border-color: #2196f3;
 	}
-	
 }
