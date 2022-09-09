@@ -1179,20 +1179,6 @@ img {
   color: var(--accent-color);
   position: relative;
 }
-.mob__menu--current::after {
-  position: absolute;
-  display: block;
-  content: "";
-  background-color: var(--accent-color);
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  left: 0;
-}
-.mob__menu--current::after {
-  content: "";
-  background-color: var(--accent-color);
-}
 
 .menu__container {
   height: 100%;
